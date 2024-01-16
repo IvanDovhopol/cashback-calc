@@ -1,8 +1,8 @@
 {
-  "name": "react-app",
+  "name": "cashback-calc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/IvanDovhopol/react-app",
+  "homepage": "https://github.com/IvanDovhopol/cashback-calc",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
