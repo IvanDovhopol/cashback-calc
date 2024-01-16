@@ -16,7 +16,7 @@ export function Cashback() {
     setIsLoading(true);
     try {
       const response = await axios.get('https://cashback-calc-mlr6.onrender.com/');
-      // update
+
       setData(response.data);
       setIsLoading(false);
     } catch (error) {
