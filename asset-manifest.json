@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/IvanDovhopol/react-app/static/css/main.c602e65d.css",
-    "main.js": "/IvanDovhopol/react-app/static/js/main.65b9712b.js",
-    "index.html": "/IvanDovhopol/react-app/index.html",
-    "main.c602e65d.css.map": "/IvanDovhopol/react-app/static/css/main.c602e65d.css.map",
-    "main.65b9712b.js.map": "/IvanDovhopol/react-app/static/js/main.65b9712b.js.map"
+    "main.css": "/IvanDovhopol/cashback-calc/static/css/main.c602e65d.css",
+    "main.js": "/IvanDovhopol/cashback-calc/static/js/main.ccd1361c.js",
+    "index.html": "/IvanDovhopol/cashback-calc/index.html",
+    "main.c602e65d.css.map": "/IvanDovhopol/cashback-calc/static/css/main.c602e65d.css.map",
+    "main.ccd1361c.js.map": "/IvanDovhopol/cashback-calc/static/js/main.ccd1361c.js.map"
   },
   "entrypoints": [
     "static/css/main.c602e65d.css",
-    "static/js/main.65b9712b.js"
+    "static/js/main.ccd1361c.js"
   ]
 }
