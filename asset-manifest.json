@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/IvanDovhopol/react-app/static/css/main.c602e65d.css",
+    "main.js": "/IvanDovhopol/react-app/static/js/main.65b9712b.js",
+    "index.html": "/IvanDovhopol/react-app/index.html",
+    "main.c602e65d.css.map": "/IvanDovhopol/react-app/static/css/main.c602e65d.css.map",
+    "main.65b9712b.js.map": "/IvanDovhopol/react-app/static/js/main.65b9712b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c602e65d.css",
+    "static/js/main.65b9712b.js"
+  ]
+}
