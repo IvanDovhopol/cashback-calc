@@ -19,12 +19,13 @@ export const FileUploader = () => {
 
     try {
       await axios.post(`https://cashback-calc-mlr6.onrender.com/`, formData, {
+        // await axios.post(`http://localhost:3001/`, formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
       });
 
-      window.location.reload();
+      // window.location.reload();
     } catch (error) {
       console.error(error.message);
     }

@@ -8,7 +8,7 @@ import { Copy } from './styled';
 
 const FILTER_VALUE = ['evosw', 'pragmaticplaylive', 'pragmatic play live', 'pilot'];
 
-export function Cashback() {
+export default function Cashback() {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -16,8 +16,10 @@ export function Cashback() {
     setIsLoading(true);
     try {
       const response = await axios.get('https://cashback-calc-mlr6.onrender.com/');
+      // const response = await axios.get('http://localhost:3001');
 
       setData(response.data);
+      console.log('response.data', response.data);
       setIsLoading(false);
     } catch (error) {
       setIsLoading(false);
@@ -42,8 +44,9 @@ export function Cashback() {
   });
 
   const finalSumInLiveGames = filteredData2?.reduce((acc, el) => {
-    const RealBets = Math.abs(el?._4 && Number(el?._4));
-    const RealWins = Math.abs(el?._7 && Number(el?._7));
+    console.log('el', el);
+    const RealBets = Math.abs(el?._5 && Number(el?._5));
+    const RealWins = Math.abs(el?._8 && Number(el?._8));
 
     if (typeof RealBets === 'number' && typeof RealWins === 'number') {
       const difference = RealBets - RealWins;
@@ -52,10 +55,11 @@ export function Cashback() {
     }
     return acc;
   }, 0);
+  console.log('finalSumInLiveGames', finalSumInLiveGames);
 
   const finalSumWithoutLiveGames = filteredData?.reduce((acc, el) => {
-    const RealBets = Math.abs(el?._4 && Number(el?._4));
-    const RealWins = Math.abs(el?._7 && Number(el?._7));
+    const RealBets = Math.abs(el?._5 && Number(el?._5));
+    const RealWins = Math.abs(el?._8 && Number(el?._8));
 
     if (typeof RealBets === 'number' && typeof RealWins === 'number') {
       const difference = RealBets - RealWins;
@@ -97,8 +101,8 @@ export function Cashback() {
             data.slice(0, -1).map((el, index) => {
               return (
                 <li key={uuidv4()}>
-                  {index + 1} * {el['﻿sep=']} * {el['']} * {el?._4 && Number(el?._4)} *{' '}
-                  {el?._7 && Math.abs(Number(el?._7))}
+                  {index + 1} * {el['﻿sep=']} * {el['']} * {el?._5 && Number(el?._5)} *{' '}
+                  {el?._8 && Math.abs(Number(el?._8))}
                 </li>
               );
             })}
