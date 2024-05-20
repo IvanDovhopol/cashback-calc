@@ -44,7 +44,6 @@ export default function Cashback() {
   });
 
   const finalSumInLiveGames = filteredData2?.reduce((acc, el) => {
-    console.log('el', el);
     const RealBets = Math.abs(el?._5 && Number(el?._5));
     const RealWins = Math.abs(el?._8 && Number(el?._8));
 
@@ -55,7 +54,6 @@ export default function Cashback() {
     }
     return acc;
   }, 0);
-  console.log('finalSumInLiveGames', finalSumInLiveGames);
 
   const finalSumWithoutLiveGames = filteredData?.reduce((acc, el) => {
     const RealBets = Math.abs(el?._5 && Number(el?._5));
